@@ -26,6 +26,7 @@
 
 > 在每行： [%Y-%M-%D %h:%m:%s]
 
+![日志配置](https://github.com/zhuangdy08/document/raw/master/pic/securecrt1.png)
 
 ## 乱码
 > 选项 --> 会话选项 --> 外观 --> 字符编码
