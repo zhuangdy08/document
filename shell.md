@@ -18,15 +18,17 @@
 
 ## Mount
 `mount -t vfat /dev/sda1 /media/disk1`   //挂载FAT32
+
 `mount -t ext2 /dev/sdb1 /media/disk2`   //挂载Ext2
-挂载NFS，将NFS服务器192.168.1.18的目录/nfsdir，挂载到当前系统的/share目录下
-`mount -t nfs -o nolock -o tcp 192.168.1.18:/nfsdir /share` 
+
+`mount -t nfs -o nolock -o tcp 192.168.1.18:/nfsdir /share`   // 挂载NFS，将NFS服务器192.168.1.18的目录/nfsdir，挂载到当前系统的/share目录下
 `mount -t loop /dev/sr0 /run/media`
 
 
 ## Tar
-`tar -cvzf 20150828/data.tgz  data/`  #将当前目录下的data目录压缩，并将压缩文件data.tgz放到20150828目录下
-`tar -xvzf data.tgz -C 20150828`    #将当前目录下的压缩文件data.tgz解压到当前目录下的20150828目录下
+`tar -cvzf 20150828/data.tgz  data/`  //将当前目录下的data目录压缩，并将压缩文件data.tgz放到20150828目录下
+
+`tar -xvzf data.tgz -C 20150828`     //将当前目录下的压缩文件data.tgz解压到当前目录下的20150828目录下
 
 
 ## dd
