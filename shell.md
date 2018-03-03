@@ -1,9 +1,9 @@
-#Shell
+# Shell
 
 ----------
 
 
-##Find命令
+## Find命令
 
 `find ./ -name *.o | xargs rm -f`  //查找当前目录的所有.o文件，并删除
 
@@ -11,7 +11,7 @@
 
 `find . -type f -exec touch {} \; ` //将所有的普通文件touch一下
 
-##Tmpfs
+## Tmpfs
 `mount -t tmpfs tmpfs /home/tmp -o size=3M` //挂载tmpfs
 也可以直接修改/etc/fstab来实现自动挂载
 增加一行
@@ -19,7 +19,7 @@
 
 
 
-##Mount
+## Mount
 `mount -t vfat /dev/sda1 /media/disk1`   //挂载FAT32
 `mount -t ext2 /dev/sdb1 /media/disk2`   //挂载Ext2
 挂载NFS，将NFS服务器192.168.1.18的目录/nfsdir，挂载到当前系统的/share目录下
@@ -27,12 +27,12 @@
 `mount -t loop /dev/sr0 /run/media`
 
 
-##Tar
+## Tar
 `tar -cvzf 20150828/data.tgz  data/`  #将当前目录下的data目录压缩，并将压缩文件data.tgz放到20150828目录下
 `tar -xvzf data.tgz -C 20150828`    #将当前目录下的压缩文件data.tgz解压到当前目录下的20150828目录下
 
 
-##dd
+## dd
 
 `dd if=/dev/sdc1 of=disk bs=4096 count=1`  //拷贝出数据
 
@@ -48,10 +48,10 @@ dd if=rootfs.bin of=flash.bin bs=1k seek=3072
 dd if=app.bin of=flash.bin bs=1k seek=6144`
 
 
-##mkdosfs
+## mkdosfs
 `mkdosfs -F 32  -n logdisk /dev/sdc1` //将/dev/sdc1格式化成FAT32，label为logdisk
 
-##sed
+## sed
 `sed 's/ /\n/g' ` //将空格改成回车
 
 /proc/cmdline的内容：
@@ -65,5 +65,5 @@ fi
 
 
 
-##lsof
+## lsof
 查看当前正在写入的文件
