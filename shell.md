@@ -1,8 +1,5 @@
 # Shell
 
-----------
-
-
 ## Find命令
 
 `find ./ -name *.o | xargs rm -f`  //查找当前目录的所有.o文件，并删除
