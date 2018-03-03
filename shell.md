@@ -2,11 +2,11 @@
 
 ## Find命令
 
-`find ./ -name *.o | xargs rm -f`  //查找当前目录的所有.o文件，并删除
-
-`find ./ -name "*.h" -o -name "*.c" -o -name "*.cpp"` //查找当前目录下的所有.h, .c, .cpp文件
-
-`find . -type f -exec touch {} \; ` //将所有的普通文件touch一下
+    find ./ -name *.o | xargs rm -f`  //查找当前目录的所有.o文件，并删除
+    
+    find ./ -name "*.h" -o -name "*.c" -o -name "*.cpp"` //查找当前目录下的所有.h, .c, .cpp文件
+    
+    find . -type f -exec touch {} \; ` //将所有的普通文件touch一下
 
 ## Tmpfs
 `mount -t tmpfs tmpfs /home/tmp -o size=3M` //挂载tmpfs
